@@ -79,6 +79,12 @@ feed:
   content_limit: 280
   content_limit_delim: ' '
 
+sitemap:
+    path: sitemap.xml
+
+robotstxt:
+  sitemap: /sitemap.xml
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/

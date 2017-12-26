@@ -26,7 +26,7 @@ I'm now going to borrow something from my art friends and say that I'm proposing
 
 Of course, what I'm not going to try to implement this Art project. What I'm really after is finding the remaining parts of a business that are difficult to automate and try to make it automatic. Isn't this what we are looking for? Look at all those SaaS companies trying to remove the pains, scale and automate stuff that wasn't automated before? And they are so cheap too! Where does this all going to lead? 
 
-![alt](http://3.bp.blogspot.com/-eRnSuozh9RE/VT9ONMfrUtI/AAAAAAAAAD8/g8rgcfcJpmE/s320/borat.jpg)
+![borat meme](/images/borat.jpg)
 
 
 My prediction is that soon all we're going to have is a bunch of Cronjobs and message brokers lousily connecting the different APIs together controlled by some reinforcement learning algorithm that looks to increase that Stripe balance. Think [Zapier](http://zapier.com/), but without you creating all the rules.
