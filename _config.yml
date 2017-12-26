@@ -76,7 +76,6 @@ feed:
   limit: 100
   hub:
   content:
-  content_limit: 280
   content_limit_delim: ' '
 
 sitemap:
