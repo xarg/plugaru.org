@@ -176,3 +176,17 @@ footer .main-nav a {
 #search-form-wrap {
     float: right;
 }
+
+@media (max-width: 800px) {
+    body > #container {
+        margin-left: 5px;
+    }
+
+    #search-form-wrap {
+        float: none;
+    }
+
+    #article-nav-older {
+        float: none;
+    }
+}
