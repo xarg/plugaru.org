@@ -2,7 +2,7 @@
 title: 'Pod sandbox changed, it will be killed and re-created.'
 date: 2018-05-21 08:46:48
 categories:
-tags:
+tags: [postgres, k8s]
 ---
 
 It all started at 6PM Friday night when we were in the middle of our new office warming party - as any admin can tell you it's best time to have a major outage. Our postgres main was down and all the alarms went crazy. We run everything on k8s so we started looking at the `kubectl get event` logs and found this cryptic event: `Pod sandbox changed, it will be killed and re-created.`. 

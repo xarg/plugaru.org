@@ -1,0 +1,96 @@
+---
+title: Managing DNS zones with GCP deployment manager
+date: 2018-08-21 14:54:02
+categories:
+tags: [gcp, dns]
+---
+
+I looked for an example of how to setup a managed DNS zone on GCP (using their deployment manager) with a Global IP address to no avail.
+If you're looking to do the same here's some templates that might get you started:
+ 
+### config.yaml
+
+```
+imports:
+- path: templates/ip.py
+- path: templates/dns.py
+
+resources:
+- name: global-ip
+  type: templates/ip.py
+  properties:
+    name: global-ip 
+    description: Global IP address used below in the DNS 
+
+- name: example-com
+  type: templates/dns.py
+  properties:
+    description: Example domain
+    dnsName: example.com.
+    resourceRecordSets:
+    - name: "*.gorgias.io."
+      type: TXT
+      ttl: 3600
+      rrdatas:
+      - '"v=spf1 include:spf.gorgias.io -all"'
+    - name: "*.gorgias.io."
+      type: MX
+      ttl: 3600
+      rrdatas:
+      - "10 mx1.gorgias.io."
+      - "10 mx2.gorgias.io."
+    - name: "*.gorgias.io."
+      type: A
+      ttl: 3600
+      rrdatas:
+      - "$(ref.global-ip.address)"
+
+```
+
+### templates/ip.py
+
+```python
+def GenerateConfig(context):
+    return {'resources': [{
+        'type': 'compute.v1.globalAddress',
+        'name': context.env['name'],
+        'properties': {
+            'description': context.properties['description'],
+        }
+    }]}
+```
+
+### templates/dns.py
+
+```python
+def GenerateConfig(context):
+    resources = [{
+        'type': 'dns.v1.managedZone',
+        'name': context.env['name'],
+        'properties': {
+            'description': context.properties['description'],
+            'dnsName': context.properties['dnsName'],
+        }
+    }]
+
+    for i, record in enumerate(context.properties['resourceRecordSets']):
+        resources.append({
+            'name': 'dns-{}-create'.format(i),
+            'action': 'gcp-types/dns-v1:dns.changes.create',
+            'metadata': {
+                'runtimePolicy': [
+                    'CREATE',
+                ],
+            },
+            'properties': {
+                'managedZone': '$(ref.{}.name)'.format(context.env['name']),
+                'additions': [
+                    record,
+                ],
+            },
+        })
+
+    return {'resources': resources}
+```
+
+
