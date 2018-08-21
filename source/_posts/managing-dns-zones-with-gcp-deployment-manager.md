@@ -6,7 +6,9 @@ tags: [gcp, dns]
 ---
 
 I looked for an example of how to setup a managed DNS zone on GCP (using their deployment manager) with a Global IP address to no avail.
-If you're looking to do the same here's some templates that might get you started:
+After some inspiration from this issue: https://github.com/GoogleCloudPlatform/deploymentmanager-samples/issues/62
+I managed to create the following config:
+
  
 ### config.yaml
 
@@ -74,6 +76,7 @@ def GenerateConfig(context):
     }]
 
     for i, record in enumerate(context.properties['resourceRecordSets']):
+        # Used to create the records
         resources.append({
             'name': 'dns-{}-create'.format(i),
             'action': 'gcp-types/dns-v1:dns.changes.create',
@@ -85,6 +88,22 @@ def GenerateConfig(context):
             'properties': {
                 'managedZone': '$(ref.{}.name)'.format(context.env['name']),
                 'additions': [
+                    record,
+                ],
+            },
+        })
+        # Used on deployment teardown to delete the records 
+        resources.append({
+            'name': 'dns-{}-delete'.format(i),
+            'action': 'gcp-types/dns-v1:dns.changes.create',
+            'metadata': {
+                'runtimePolicy': [
+                    'DELETE',
+                ],
+            },
+            'properties': {
+                'managedZone': '$(ref.{}.name)'.format(context.env['name']),
+                'deletions': [
                     record,
                 ],
             },
