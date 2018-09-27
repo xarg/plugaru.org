@@ -1,6 +1,6 @@
 ---
-title: 'Introducing kuku: kubernetes templates tool'
-date: 2018-10-01 14:54:02
+title: 'Introducing kuku: kubernetes template tool'
+date: 2018-09-27 14:54:02
 tags: [helm, k8s]
 ---
 At [Gorgias](https://gorgias.io/) we're using [k8s](https://kubernetes.io/) on [gke](https://cloud.google.com/kubernetes-engine/) to run all our production services. We run our REST API apps, RabbitMQ, Celery background workers, PostgreSQL and other smaller services on k8s. We also have staging & development k8s clusters where we experiment with different infrastructure setups and deployments.
