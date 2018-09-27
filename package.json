@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "deploy": "hexo generate && gsutil -m rsync -a public-read -R public/ gs://plugaru.org"
+    "start": "hexo serve"
   },
   "hexo": {
     "version": "3.4.4"
