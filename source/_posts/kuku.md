@@ -3,7 +3,7 @@ title: 'Introducing kuku: kubernetes templates tool'
 date: 2018-10-01 14:54:02
 tags: [helm, k8s]
 ---
-At [Gorgias](https://gorgias.io/) we're using [k8s](https://kubernetes.io/) on [gke](https://cloud.google.com/kubernetes-engine/) for running all our production services. We run our REST API apps, RabbitMQ, Celery background workers, PostgreSQL and other smaller services on k8s. We also have staging & development k8s clusters where we experiment with different infrastructure setups and deployments.
+At [Gorgias](https://gorgias.io/) we're using [k8s](https://kubernetes.io/) on [gke](https://cloud.google.com/kubernetes-engine/) to run all our production services. We run our REST API apps, RabbitMQ, Celery background workers, PostgreSQL and other smaller services on k8s. We also have staging & development k8s clusters where we experiment with different infrastructure setups and deployments.
 
 If you have multiple k8s clusters to manage, chances are you also need a templating tool to customize your k8s manifests. By far the most popular one is [helm](https://helm.sh) these days. There is also [ksonnet](https://ksonnet.io/) and more recently [pulumi](https://github.com/pulumi/pulumi). All of these tools are powerful and solve real problems, but they are not quite right for us.
 
@@ -61,6 +61,8 @@ Values come from the CLI or value files (same as Helm). Templates are just pytho
 ### Using kuku 
 
 Suppose you want to create a k8s service using a template where you define the service `name`, `internalPort` and `externalPort`.
+
+> To install: `pip3 install kuku`
 
 Given the following `service.py` template:
 
@@ -319,7 +321,8 @@ kuku render -f values-production.yaml templates/ | kubectl apply -f -
 
 The above renders all your templates and generates the yaml manifests that are then applied using `kubectl apply`.
 
-You can find a couple of examples here: https://github.com/xarg/kuku/tree/master/examples
+You can find the source here: https://github.com/xarg/kuku/
+And a couple of examples: https://github.com/xarg/kuku/tree/master/examples
 
 ## Conclusion
 
