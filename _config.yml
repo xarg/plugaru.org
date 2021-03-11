@@ -51,7 +51,7 @@ index_generator:
   path: ''
   per_page: 5
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -83,6 +83,11 @@ sitemap:
 
 robotstxt:
   sitemap: /sitemap.xml
+
+hide_posts:
+  # Add "noindex" meta tag to prevent hidden posts from being indexed by search engines
+  noindex: false
+  public_generators: ['tag', 'category', 'archive', 'sitemap', 'feed']
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

@@ -3,6 +3,7 @@ title: zope.component introduction
 date: 2011-11-23 17:28:48
 categories: python 
 tags: [guide, python, tutorial, howto, zope, zope-components]
+hidden: true
 ---
 
 Recently I gave a talk about zope component architecture at a company in Paris where I started consulting on zope, plone, django and python in general. In these posts, aided by code examples, I will try to show what  zope components are capable of, what are the common use-cases and some of my personal views about the subject.

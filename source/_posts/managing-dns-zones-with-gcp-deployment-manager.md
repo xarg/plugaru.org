@@ -3,6 +3,7 @@ title: Managing DNS zones with GCP deployment manager
 date: 2018-08-21 14:54:02
 categories:
 tags: [gcp, dns]
+hidden: true
 ---
 
 I looked for an example of how to setup a managed DNS zone on GCP (using their deployment manager) with a Global IP address to no avail.
