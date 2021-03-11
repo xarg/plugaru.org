@@ -3,6 +3,7 @@ title: PostgreSQL backup with pghoard & Kubernetes
 date: 2016-07-17 16:50:33
 categories: devops 
 tags: [kubernetes, k8s, postgres, pghoard]
+hidden: true
 ---
 
 **TLDR:** https://github.com/xarg/pghoard-k8s

@@ -3,6 +3,7 @@ title: Highly available Celery with RabbitMQ and Kubernetes
 date: 2018-01-02 16:52:03
 categories: devops 
 tags: [kubernetes, helm, rabbitmq, celery, ha]
+hidden: true
 ---
 
 [Kubernetes](https://kubernetes.io/), [RabbitMQ](https://www.rabbitmq.com/) and [Celery](http://www.celeryproject.org/) provides a very natural way to create a reliable python worker cluster. This post is based on my experience running Celery in production at [Gorgias](https://gorgias.io) over the past 3 years. The scope of this post is mostly dev-ops setup and a few small gotchas that could prove useful for people trying to accomplish the same type of deployment. At the end we'll try to shut down a machine to see if our cluster is indeed reliable as I claim.

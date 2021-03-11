@@ -3,6 +3,7 @@ title: 'PyCharm Tip: Show only tables'
 date: 2018-11-22 11:00:17
 categories:
 tags: [pycharm, datagrip, postgres]
+hidden: true
 ---
 
 If you work with PyCharm or DataGrip with a database and you want to access the table data it can be pretty annoying to get to them since you have to select the Connection -> Database -> Schema -> Tables - quite a few clicks. 

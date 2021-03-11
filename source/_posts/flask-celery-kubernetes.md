@@ -3,6 +3,7 @@ title: Running Flask & Celery with Kubernetes
 date: 2016-03-03 16:49:31
 categories: devops 
 tags: [kubernetes, k8s, flask, celery, python]
+hidden: true
 ---
 
 At [Gorgias](https://gorgias.io) we recently switched our [flask](http://flask.pocoo.org) & [celery](http://www.celeryproject.org/) apps from Google Cloud VMs provisioned with [Fabric](http://www.fabfile.org/) to using [docker](https://www.docker.com/) with [kubernetes](http://kubernetes.io/) (k8s). This is a post about our experience doing this.
