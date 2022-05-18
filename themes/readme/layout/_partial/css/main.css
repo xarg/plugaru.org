@@ -90,6 +90,27 @@ article blockquote cite {
     margin-left: 5px;
 }
 
+article .book:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article .book figure {
+    display: table;
+    float: left;
+    width: 30%;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+article .book figure figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
 #article-nav-older {
     float: right;
 }
