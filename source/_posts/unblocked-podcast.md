@@ -1,5 +1,5 @@
 ---
-title: Gorgias's history, mission and what's next
+title: Scaling engineering at Gorgias 
 date: 2023-08-17 04:20:00
 categories: talks
 tags: [ecommerce, startups, gorgias]
