@@ -17,8 +17,9 @@ date: 2024-08-21 11:52:23
     <img src="/images/alex-plugaru-4.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
     <img src="/images/alex-plugaru-2.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
 </div>
+<span style="font-size: smaller">Photo credit: [Mary Nevezhyna](https://www.marynevezhyna.com/)</span>
 
-I'm Alex Plugaru, a software engineer and entrepreneur based in New York City with 20+ years of experience.
+I'm Alex Plugaru, software engineer and entrepreneur based in New York City with 20+ years of experience.
 As the co-founder and CTO of [Gorgias](https://www.gorgias.com), I help ecommerce brands provide exceptional customer 
 experience through our CRM platform used by thousands of brands worldwide.
 
