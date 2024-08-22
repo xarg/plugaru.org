@@ -3,8 +3,20 @@ title: About me
 date: 2024-08-21 11:52:23
 ---
 
+<style>
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+</style>
 
-![Alex Plugaru](/images/alex-plugaru.jpg "Alex Plugaru")
+<div class="image-gallery">
+    <img src="/images/alex-plugaru-1.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
+    <img src="/images/alex-plugaru-3.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
+    <img src="/images/alex-plugaru-4.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
+    <img src="/images/alex-plugaru-2.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
+</div>
 
 I'm Alex Plugaru, a software engineer and entrepreneur based in New York City with 20+ years of experience.
 As the co-founder and CTO of [Gorgias](https://www.gorgias.com), I help ecommerce brands provide exceptional customer 
