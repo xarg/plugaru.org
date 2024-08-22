@@ -6,13 +6,13 @@ date: 2024-08-21 11:52:23
 
 ![Alex Plugaru](/images/alex-plugaru.jpg "Alex Plugaru")
 
-I'm Alex Plugaru. I live in New York City. I'm a software engineer and entrepreneur with 20+ years of experience.
-When I'm not working on startups, I'm either spending time in nature (hiking/kayaking/fishing/over-landing with my
-4runner), relaxing with my family and friends, reading some hard sci-fi, baking cakes, or making something with electronics.
+I'm Alex Plugaru, a software engineer and entrepreneur based in New York City with 20+ years of experience.
+As the co-founder and CTO of [Gorgias](https://www.gorgias.com), I help ecommerce brands provide exceptional customer 
+experience through our CRM platform used by thousands of brands worldwide.
 
-I'm also the co-founder and CTO of [Gorgias](https://www.gorgias.com), a customer relationship platform (CRM) used by
-thousands of ecommerce businesses worldwide. We help brands deliver exceptional customer service at scale.
+When I'm not working, I try to spend my time in nature, relaxing with my family and friends, reading some hard sci-fi 
+book, baking cakes, or making something with electronics.
 
-This blog is about startups, software engineering, management, book reviews and random thoughts.
+This blog covers startups, software engineering, management, book summaries and other random things.
 
-You can also find me on [github](https://github.com/xarg), [twitter](https://twitter.com/humanfromearth) or by email first name at this domain dot org. 
+To contact me, please reach out via email: [alex@plugaru.org](mailto:alex@plugaru.org)
