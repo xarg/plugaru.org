@@ -3,20 +3,7 @@ title: About me
 date: 2024-08-21 11:52:23
 ---
 
-<style>
-.image-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
-}
-</style>
-
-<div class="image-gallery">
-    <img src="/images/alex-plugaru-1.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
-    <img src="/images/alex-plugaru-3.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
-    <img src="/images/alex-plugaru-4.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
-    <img src="/images/alex-plugaru-2.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
-</div>
+<img src="/images/alex-plugaru.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
 <span style="font-size: smaller">Photo credit: [Mary Nevezhyna](https://www.marynevezhyna.com/)</span>
 
 I'm Alex Plugaru, software engineer and entrepreneur based in New York City with 20+ years of experience.
