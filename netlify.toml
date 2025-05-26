@@ -1,0 +1,6 @@
+[build]
+  command = "npm install && hexo generate"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "14.21.3"
