@@ -51,7 +51,7 @@ This does not compare to energy produced by cars or energy required by the indus
 
 There is also a fun VSauce video about typing and energy: 
 
-{% youtube pPXxhgdtcXs %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pPXxhgdtcXs" frameborder="0" allowfullscreen></iframe>
 
 In our age of energy abundance and access to information I think it's more important to not waste time on repetitive things than thinking about how much energy is consumed typing stuff. Our time as creating human beings is far more precious than those of computers. 
 
