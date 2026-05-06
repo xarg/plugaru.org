@@ -1,10 +1,2 @@
 <% if (post.categories && post.categories.length){ %>
-  in <span class="article-category">
-    <%- list_categories(post.categories, {
-      show_count: false,
-      class: 'article-category',
-      style: 'none',
-      separator: '►'
-    }) %>
-  </span>
-<% } %>
+in <span class="article-category"><% post.categories.each(function(cat, i){ %><%- i > 0 ? ' ' : '' %><a class="article-category-link" href="<%- url_for(cat.path) %>">#<%= cat.name %></a><% }) %></span><% } %>

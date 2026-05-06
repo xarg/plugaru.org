@@ -11,7 +11,7 @@ In 2013 we sent **[182.9B](http://www.radicati.com/wp/wp-content/uploads/2013/0
 
 Every time an e-mail is written, or any sort of human-computer interaction, some amount of energy is expended. Given that in 2013 an estimate of **[182.9 billion](http://www.radicati.com/wp/wp-content/uploads/2013/09/Email_Market_2013-2017_Executive_Summary.pdf)** e-mails written world wide an interesting question pops up: 
 
-### How much energy is needed to write an e-mail?
+## How much energy is needed to write an e-mail?
 
 By **energy** I mean how many `Joules` and by **needed** I mean needed by the human who writes the e-mail and the computer used to write the respective e-mail. For our calculations we'll take an **e-mail** length of a 100 words. I don't know the average e-mail size, but perhaps I should ask NSA, FSB or MSS some time to get a more accurate idea.
 

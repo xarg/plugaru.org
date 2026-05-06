@@ -14,7 +14,7 @@ Before diving too deep I recommend refreshing your knowledge on the tools we are
 - You used or know a bit about RabbitMQ. Some basics about clustering would be nice, but not required. You can read their docs here: https://www.rabbitmq.com/clustering.html
 - You used or know about Celery: how it schedules it's tasks and executes them.
 
-### Pieces falling into place: Why Kubernetes, RabbitMQ and Celery?
+## Pieces falling into place: Why Kubernetes, RabbitMQ and Celery?
 
 - **Kubernetes** is a very reliable container orchestration system (runs your docker images). It is used by a vast number of companies in production environments. It's proven tech and provides a good base for making failure tollerant and scalable applications such as an async worker cluster which is what we're trying to do.
 - **RabbitMQ** is a popular open source broker that has a history of being resilient to failure, can be configured to be highly-available and can protect your environment from data-loss in case of a hardware failure.
@@ -22,7 +22,7 @@ Before diving too deep I recommend refreshing your knowledge on the tools we are
 
 Given their properties I hope that when we put all of the above components together you will have a robust worker cluster that is easy to scale and will be hard to brake.
 
-### Kubernetes (k8s) and Helm setup
+## Kubernetes (k8s) and Helm setup
 
 First we'll need to run k8s either via [minikube](https://github.com/kubernetes/minikube) on your local machine or using some k8s provider such as [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine/) (GKE). For this tutorial I'm going to use GKE, but feel free to use any kubernetes environment.
 
@@ -47,7 +47,7 @@ To install helm in your kubernetes cluster (make sure the [Helm CLI](https://doc
     
 At this point you should be all set with Kubernetes and Helm. We are now ready to deploy our RabbitMQ cluster which Celery will use later on.
 
-### RabbitMQ (RMQ) docker image 
+## RabbitMQ (RMQ) docker image 
 
 In order to run our RabbitMQ (RMQ) cluster on k8s first we'll have to build the Docker images for it. Here's a sample Dockerfile:
 
@@ -188,7 +188,7 @@ Now that we understand our docker image better we can build it and upload it to 
     
 We have our image uploaded to the container registry and now we're ready to deploy it!
     
-### RabbitMQ Helm chart 
+## RabbitMQ Helm chart 
 
 To deploy our RabbitMQ cluster we're going to use the kubernetes [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) to deploy our RMQ cluster. The reason for this choice is that StatefulSets is in it's description:
 
@@ -294,7 +294,7 @@ spec:
 
 The `StatefulSet` will first claim a `10Gi` persistent volume with the `standard` storage type for each of our nodes defined by `replicaCount`. Then it will start each rabbitmq pod and check if it's alive and running.
 
-### Deploy the RabbitMQ cluster in Kubernetes
+## Deploy the RabbitMQ cluster in Kubernetes
 
 While still in the `rabbitmq-statefulset` directory we can deploy our chart to k8s using the helm command:
 

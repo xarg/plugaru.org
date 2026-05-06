@@ -63,6 +63,10 @@ body > #container {
     padding: 0 20px;
 }
 
+#header {
+    position: relative;
+}
+
 header #header-title {
     margin-bottom: 0;
 }
@@ -72,10 +76,25 @@ header #header-title a {
     text-decoration: none;
 }
 
-#header > a {
+#header-about {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: inline-block;
     padding: 6px 8px;
-    margin: -6px -8px;
+}
+
+#header-bio {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.outer {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* Article stuff */
@@ -84,8 +103,8 @@ article {
     text-rendering: optimizeLegibility;
 }
 
-article.article-type-post {
-    margin-bottom: 80px;
+article.article-type-post + article.article-type-post {
+    margin-top: 160px;
 }
 
 article header {
@@ -117,7 +136,7 @@ article .article-meta time {
 
 article .article-meta .article-category,
 article .article-meta .article-tag-list {
-    margin-left: 8px;
+    margin-left: 2px;
 }
 
 article .article-entry {
@@ -133,14 +152,7 @@ article .article-entry h3 {
 }
 
 article .article-tag-list {
-    margin-top: 5px;
-    padding-left: 0;
     display: inline;
-}
-
-article .article-tag-list-item {
-    display: inline-block;
-    padding-right: 5px;
 }
 
 article blockquote {
@@ -236,7 +248,10 @@ li code {
 
 nav#page-nav {
     font-size: 19px;
-    padding-bottom: 10px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
 nav#page-nav .page-number {
@@ -245,8 +260,9 @@ nav#page-nav .page-number {
 }
 
 nav#article-nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    overflow: hidden;
 }
 
 /* Footer */
@@ -258,12 +274,13 @@ footer#footer {
     padding-bottom: 24px;
 }
 
-#main-nav .main-nav-link {
-    margin-right: 12px;
+#main-nav,
+#sub-nav {
+    display: inline;
 }
 
-#sub-nav {
-    margin-top: 8px;
+#main-nav .main-nav-link {
+    margin-right: 12px;
 }
 
 #search-form-wrap {
@@ -275,8 +292,8 @@ footer#footer {
         padding: 0 16px;
     }
 
-    article.article-type-post {
-        margin-bottom: 48px;
+    article.article-type-post + article.article-type-post {
+        margin-top: 80px;
     }
 
     article header {

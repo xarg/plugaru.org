@@ -1,6 +1,2 @@
 <% if (post.tags && post.tags.length){ %>
-  <%- list_tags(post.tags, {
-    show_count: false,
-    class: 'article-tag'
-  }) %>
-<% } %>
+<span class="article-tag-list"><% post.tags.each(function(tag, i){ %><%- i > 0 ? ' ' : '' %><a class="article-tag-list-link" href="<%- url_for(tag.path) %>">#<%= tag.name %></a><% }) %></span><% } %>

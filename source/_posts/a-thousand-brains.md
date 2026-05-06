@@ -21,7 +21,7 @@ Note that these are all high-level concepts that are useful to explain how it's 
 
 Let's dive into what each of these concepts means:
 
-### Models of objects
+## Models of objects
 
 An object can be an apple, a person, a math equation, language, democracy, love, etc... These "objects" are all the same to the neocortex. The same means that the same building blocks or algorithm (inside cortical columns) is used to represent them. This is remarkable because we don't normally think of grouping abstract things such as calculus with an apple. Remarkable as it may be, there's a lot of evidence supporting this claim (more below).
 
@@ -35,7 +35,7 @@ The brain creates a view of the world using millions of these object-models dist
 
 Note that it doesn't mean that an object-model has one piece-model in each of the 150k columns. It depends on how complex the object in question is. 
 
-### Reference frames
+## Reference frames
 
 Now let's take a single jigsaw puzzle piece or piece-model from a single cortical column and see how it's supposed to work. A piece-model is composed of 2 parts:
 
@@ -62,7 +62,7 @@ The **what** (sensory input) and the **where** (reference frames) of each model 
 
 One last detail I want to add about movement + perception is that the "movement" neurons that send the movement commands to the old brain (neocortex doesn't have direct access to muscles) are also part of cortical columns and are mixed with sensory and location neurons. They are distributed everywhere around the neocortex.
 
-### Inference
+## Inference
 
 > The inference is done by voting between these models.
 
@@ -76,7 +76,7 @@ There are long-distance connections between columns, inside the same cortical re
 
 ![Rubin vase](/images/rubin-vase.jpeg)
 
-### More evidence to justify the theory
+## More evidence to justify the theory
 
 Again, read the book because it's super interesting! I omitted important things about the brain and neocortex, but here are a couple of things worth mentioning: 
 
@@ -85,7 +85,7 @@ Again, read the book because it's super interesting! I omitted important things 
 - The evolution of brains looks additive - more complex organisms have bigger and more complex brains. More of the same is the successful evolutionary strategy.
 - The newer the brain the "less specialized" it looks and the "more uniform" it appears and the "more of it" there is. Recall that the neocortex occupies ~80% by volume. That's a lot of brain and it's not cheap to run! To think that I'm using it to watch memes on the internet...
 
-### What's next? More questions than answers!
+## What's next? More questions than answers!
 
   - It appears that the "motivation" or "goals" of the brain is not set in the neocortex, but in the "old" brain and there is a constant "battle" between the two. The "old" brain wants to eat the marshmallow, but the new one has a model of you on a diet. Is this accurate? If yes, then what is the mechanism of this interaction?
   - Is it confirmed that grid and place cells exist in the neocortex? It's a key part of the theory.
@@ -94,7 +94,7 @@ Again, read the book because it's super interesting! I omitted important things 
   - How does the voting happen technically? I get there are connections between columns, but where does the "winning" of the vote happen?
   - How does prediction happen? I think I understood the basics of primed & inhibitory neurons vs un-primed neurons, but how   that leads to prediction is unclear.
 
-### Closing thoughts 
+## Closing thoughts 
 
 I'm excited about what I learned and eager to follow the reading recommendations at the end of the book. I realize that I may have misinterpreted parts of the book and there are a lot of details - I hope to correct and improve my knowledge as I discover more about the subject. There is a non-zero chance that Jeff's theory is wrong, but his theory can be tested which is exciting!
 

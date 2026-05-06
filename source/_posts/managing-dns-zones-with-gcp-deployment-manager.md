@@ -11,7 +11,7 @@ After some inspiration from this issue: https://github.com/GoogleCloudPlatform/d
 I managed to create the following config:
 
  
-### config.yaml
+## config.yaml
 
 ```
 imports:
@@ -50,7 +50,7 @@ resources:
 
 ```
 
-### templates/ip.py
+## templates/ip.py
 
 ```python
 def GenerateConfig(context):
@@ -63,7 +63,7 @@ def GenerateConfig(context):
     }]}
 ```
 
-### templates/dns.py
+## templates/dns.py
 
 ```python
 def GenerateConfig(context):

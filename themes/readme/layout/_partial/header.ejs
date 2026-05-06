@@ -1,8 +1,12 @@
 <header id="header">
+    <a href="/about" id="header-about">About me</a>
     <h1 id="header-title">
         <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
     </h1>
-    <a href="/about">About me</a>
+    <p id="header-bio">
+        Founder of <a href="https://elench.com">Elench</a>, previously Cofounder and CTO of <a href="https://www.gorgias.com">Gorgias</a>.
+        <br>Writing about AI, Robotics and Startups.
+    </p>
     <% if (theme.subtitle){ %>
     <h2 id="header-subtitle"><%- theme.subtitle %></h2>
     <% } %>

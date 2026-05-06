@@ -9,7 +9,7 @@ If you have multiple k8s clusters to manage, chances are you also need a templat
 
 I can't speak much about `ksonnet` and `pulumi` because I only briefly had a look at their APIs and how-to guides so take it with a grain of salt. However, as a user, I can speak about `helm` which is what we've been using at Gorgias for all our services.
 
-### Why not helm?
+## Why not helm?
 
 Well, there are a few things I find problematic with helm:
 
@@ -20,37 +20,37 @@ Well, there are a few things I find problematic with helm:
 
 At Gorgias, we've been using Helm to manage all our k8s resources, and it's been great until we had to deal with more complex charts with lots of control flow and `ranges`. If you ever dealt with `ranges` in Helm and `template` you might know that it's not easy to manage considering different contexts. For example `template "name" .` vs `template "name" $` comes to mind. 
 
-### So why not Ksonnet then?
+## So why not Ksonnet then?
 
 Ksonnet improves the situation a bit with a stricter approach using the [jsonnet](http://jsonnet.org/) language. When I say strict, I mean it doesn't blindly render a text file into YAML as helm does, but uses a real programming language to render the yaml in the end.
 
 My main issue with it is the language: `jsonnet`. It mostly has to do with the fact that it is yet another template language that I have to learn and deal with its different gotchas. A separate issue is that it introduces a whole set of new concepts such as `Part`, `Prototype`, `Parameter`, etc... I found that a bit too much when all I want is to render a bunch of YAML files with some variables.
 
-### Pulumi?
+## Pulumi?
 
 [Pulumi](https://github.com/pulumi/pulumi) approaches the most to what I would consider the ideal tool for us. It uses a programmatic approach where it connects directly to your cluster and creates the resources declared with code (TypeScript, Python, etc..). You write TS code, and you provision your infra with progress-bar. There is a lot to like about this approach. There are, however, a few things that I don't like about Pulumi either: the primary language seems to be TypeScript at the moment - which I don't want to use when it comes to infrastructure code. Python templates were in development when I wrote this post but I didn't try them.
 
 Pulumi also does infrastructure provisioning (multi-provider) - a la Terraform. I think this is overkill for what we need at Gorgias. We don't have to use those features of course, but it seems like it tries to solve 2 different and complex problems at the same time. To put it plainly: it's too much of a swiss army knife for us.
 
-### kuku: a simple templating tool
+## kuku: a simple templating tool
 
 Finally, after searching for the right tool, I decided that I would write my own. kuku is very similar to Helm, but uses python files as templates instead of YAML. It also doesn't have a server-side component.
 
 Here are some of its goals: 
 
-#### Write python code to generate k8s manifests.
+### Write python code to generate k8s manifests.
 Python is a popular language with a vast ecosystem of dev-ops packages. Most importantly it's easier to debug than some templating languages used today to generate k8s manifests.
 
-#### No k8s server-side dependencies (i.e. tiller).
+### No k8s server-side dependencies (i.e. tiller).
 k8s already has a database for its current state (using etcd). We can connect directly to it (if needed) from the client to do our operations instead of relying on an extra server-side dependency.
 
-#### Local validation of manifests.
+### Local validation of manifests.
 Where possible do the validation locally using the [official k8s python client](https://github.com/kubernetes-client/python).
 
-#### Use standard tools.
+### Use standard tools.
 Where possible use `kubectl` to apply changes to the k8s cluster instead of implementing a specific protocol. Again, this allows for easier maintenance and debugging for the end user.
 
-#### More on Helm comparison
+### More on Helm comparison
 
 Compared to Helm there is no concept of charts, releases or dependencies. I found that we have rarely used any of those concepts and they just added extra complexity to our charts without much benefit. 
 
@@ -58,7 +58,7 @@ Compared to Helm there is no concept of charts, releases or dependencies. I foun
 
 Values come from the CLI or value files (same as Helm). Templates are just python files that have a `template` function.
 
-### Using kuku 
+## Using kuku 
 
 Suppose you want to create a k8s service using a template where you define the service `name`, `internalPort` and `externalPort`.
 
@@ -129,7 +129,7 @@ kuku delete -s name=kuku-web,internalPort=80,externalPort=80 .
 kuku render -s name=kuku-web,internalPort=80,externalPort=80 . | kubectl delete -f - 
 ```
 
-### kuku templates      
+## kuku templates      
 
 Let's return to templates a bit because a few things are happening there. Templates are python files that are defining a function called `template` that accepts a `dict` argument `context` and returns a k8s object or a list of k8s objects. Simplest example:
 
@@ -142,7 +142,7 @@ You can create multiple template files each defining their own `template` functi
 
 When writing kuku templates I highly recommend that you use an editor that is aware of the k8s python package above so you can get nice auto-completion of properties - it makes life some much easier as a result.
 
-### kuku command line interface 
+## kuku command line interface 
 
 Similar to [helm](https://helm.sh/), `kuku` accepts defining it's context variables from the CLI:
 
@@ -153,7 +153,7 @@ kuku render -s namespace=kuku .
 `-s namespace=kuku` will be passed to the `context` argument in your `template` function. Run `kuku -h` to find out more.
 
 
-### A more realistic example
+## A more realistic example
 
 Defining services and a namespace is nice, but let's see how it behaves with a more complex Postgres StatefulSet. 
 Consider the following directory:
