@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8"><%
     var title = page.title;
@@ -19,7 +19,7 @@
     }
     %>
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- open_graph({
         twitter_id: theme.twitter,
         google_plus: theme.google_plus,
@@ -30,7 +30,7 @@
     <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
     <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="icon" href="<%- theme.favicon %>" type="image/svg+xml">
     <% } %>
     <style>
         <%- partial('css/main.css') %>

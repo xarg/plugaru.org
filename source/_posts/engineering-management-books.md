@@ -10,7 +10,7 @@ If you're like me (first time manager in a [fast growing software company](https
 Thankfully there are smarter, more experienced people out there that figured out a lot of topics that you can copy, claim credit and become the leader that you always dreamed out to be and your company desperately needs!
 
 
-### My list of books I wish I knew about before scaling [Gorgias](https://www.gorgias.com)
+## My list of books I wish I knew about before scaling [Gorgias](https://www.gorgias.com)
 
 If it's not immediately obvious, the book selection and the order below is opinionated. I'm starting with the leadership and culture books first, then going into management fundamentals, engineering manager career orientation, hiring engineers, operational best practices, writing strategy and finally scaling teams and productivity.
 
@@ -102,7 +102,7 @@ Not sure? Not a good idea to hire.
 	</figure>
 	Data-driven approach to best practices in engineering. Can you measure good engineering? The main point the book is trying to make is that you can avoid sacrificing quality and focusing on the right things you can increase velocity of your organization. What are those metrics?
 	<br>
-	Introducing DORA metrics - read more <a href="https://www.swarmia.com/blog/dora-metrics/">here</a>.
+	Introducing DORA metrics - read more in <a href="https://www.swarmia.com/blog/dora-metrics/">Swarmia's guide to DORA metrics</a>.
 	<ul>
 	<li>**Deployment frequency**: How often a software team pushes changes to production
 	<li>**Change lead time**: The time it takes to get committed code to run in production
@@ -139,14 +139,14 @@ It covers four common patterns for teams:
 <li>Complicated-subsystem teams that maintain a particularly complex subsystem, such as an ML model
 <li>Platform teams that provide internal services like deployment platforms or data services
 </ul>
-Again, you can read more <a href="https://jacobian.org/2021/jul/5/book-review-team-topologies/">here</a>.
+Again, you can read more in <a href="https://jacobian.org/2021/jul/5/book-review-team-topologies/">Jacob Kaplan-Moss's review of Team Topologies</a>.
 </div>
 
 ## [An Elegant Puzzle](https://www.amazon.com/dp/B07QYCHJ7V)
 <div class="book">
 	<figure>
 		<a href="https://www.amazon.com/dp/B07QYCHJ7V">
-			<img src="/images/an-elegant-puzzle.jpg" alt="" />
+			<img src="/images/an-elegant-puzzle.jpg" alt="An Elegant Puzzle: Systems of Engineering Management" />
 		</a>
 		<figcaption>"An Elegant Puzzle: Systems of Engineering Management" by  Will Larson</figcaption>
 	</figure>

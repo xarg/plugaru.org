@@ -84,7 +84,7 @@ sitemap:
     path: sitemap.xml
 
 robotstxt:
-  sitemap: /sitemap.xml
+  sitemap: https://plugaru.org/sitemap.xml
 
 hide_posts:
   # Add "noindex" meta tag to prevent hidden posts from being indexed by search engines

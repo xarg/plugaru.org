@@ -29,7 +29,7 @@ show_count: false
 # Miscellaneous
 google_analytics: UA-111580819-1
 gauges_analytics:
-favicon: /favicon.png
+favicon: /favicon.svg
 twitter: humanfromearth
 google_plus:
 fb_admins:
