@@ -7,8 +7,8 @@ date: 2024-08-21 11:52:23
 <span style="font-size: smaller">Photo credit: <a href="https://www.marynevezhyna.com/">Mary Nevezhyna</a></span>
 
 I'm Alex Plugaru, software engineer and entrepreneur based in New York City with 20+ years of experience.
-As the co-founder and CTO of [Gorgias](https://www.gorgias.com), I help ecommerce brands provide exceptional customer 
-experience through our CRM platform used by thousands of brands worldwide.
+
+I'm the founder of [Elench](https://elench.com), an automated manufacturing startup based in the NY Metro area. Previously I was co-founder and CTO of [Gorgias](https://www.gorgias.com), helping thousands of ecommerce brands deliver exceptional customer experience through our CRM platform.
 
 When I'm not working, I try to spend my time in nature, relaxing with my family and friends, reading some hard sci-fi 
 book, baking cakes, or making something with electronics.
