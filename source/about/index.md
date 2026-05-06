@@ -4,7 +4,7 @@ date: 2024-08-21 11:52:23
 ---
 
 <img src="/images/alex-plugaru.jpg" alt="Alex Plugaru" title="Alex Plugaru"/>
-<span style="font-size: smaller">Photo credit: [Mary Nevezhyna](https://www.marynevezhyna.com/)</span>
+<span style="font-size: smaller">Photo credit: <a href="https://www.marynevezhyna.com/">Mary Nevezhyna</a></span>
 
 I'm Alex Plugaru, software engineer and entrepreneur based in New York City with 20+ years of experience.
 As the co-founder and CTO of [Gorgias](https://www.gorgias.com), I help ecommerce brands provide exceptional customer 

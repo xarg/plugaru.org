@@ -102,7 +102,7 @@ Not sure? Not a good idea to hire.
 	</figure>
 	Data-driven approach to best practices in engineering. Can you measure good engineering? The main point the book is trying to make is that you can avoid sacrificing quality and focusing on the right things you can increase velocity of your organization. What are those metrics?
 	<br>
-	Introducing DORA metrics - read more [here](https://www.swarmia.com/blog/dora-metrics/).
+	Introducing DORA metrics - read more <a href="https://www.swarmia.com/blog/dora-metrics/">here</a>.
 	<ul>
 	<li>**Deployment frequency**: How often a software team pushes changes to production
 	<li>**Change lead time**: The time it takes to get committed code to run in production
@@ -111,7 +111,7 @@ Not sure? Not a good idea to hire.
 	</ul>
 	<br>
 	Should you use these metrics and draw immediate conclusion  if you team is amazing or sucks? Metrics without the context are a huge danger, but can trigger valuable investigations and gaining more understanding.<br>
-	I recommend supplementing this book with [Swarmia](https://www.swarmia.com/). I have no affiliation with them. Just a fan.
+	I recommend supplementing this book with <a href="https://www.swarmia.com/">Swarmia</a>. I have no affiliation with them. Just a fan.
 </div>
 
 ## [Team Topologies](https://www.amazon.com/dp/B09JWT9S4D)
@@ -122,10 +122,10 @@ Not sure? Not a good idea to hire.
 		</a>
 		<figcaption>"Team Topologies: Organizing Business and Technology Teams for Fast Flow" by Matthew Skelton and Manuel Pais</figcaption>
 	</figure>
-For later stage scaling teams and how to think about it. The core concepts of the book are [cognitive load](https://en.wikipedia.org/wiki/Cognitive_load), [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) and the "Inverse Conway Maneuver" which translates to: if you need a system with **X** components then you should have **X** teams.
+For later stage scaling teams and how to think about it. The core concepts of the book are <a href="https://en.wikipedia.org/wiki/Cognitive_load">cognitive load</a>, <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's law</a> and the "Inverse Conway Maneuver" which translates to: if you need a system with <strong>X</strong> components then you should have <strong>X</strong> teams.
 
 <br>
-From Jacob Kaplan-Moss's [blog](https://jacobian.org/2021/jul/5/book-review-team-topologies/) which goes in more detail:
+From Jacob Kaplan-Moss's <a href="https://jacobian.org/2021/jul/5/book-review-team-topologies/">blog</a> which goes in more detail:
 <br>
 
 The main thesis of the book is to engage in “team-first thinking”:
@@ -139,7 +139,7 @@ It covers four common patterns for teams:
 <li>Complicated-subsystem teams that maintain a particularly complex subsystem, such as an ML model
 <li>Platform teams that provide internal services like deployment platforms or data services
 </ul>
-Again, you can read more [here](https://jacobian.org/2021/jul/5/book-review-team-topologies/).
+Again, you can read more <a href="https://jacobian.org/2021/jul/5/book-review-team-topologies/">here</a>.
 </div>
 
 ## [An Elegant Puzzle](https://www.amazon.com/dp/B07QYCHJ7V)
