@@ -1,6 +1,6 @@
 ---
 title: Elench 
-date: 2026-05-06 13:33:06
+date: 2026-05-08 10:54:06
 categories: startups
 tags: ai, startups, manufacturing, robotics 
 ---
